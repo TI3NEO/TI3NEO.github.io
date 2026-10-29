@@ -1,63 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#02090d">
-<meta name="description" content="Política de Privacidad de Acompaña, aplicación infantil y familiar de TI3NEO. Actualizada el 15 de octubre de 2026. Documento pendiente de auditoría de la versión final.">
-<link rel="canonical" href="https://ti3neo.github.io/privacidad-acompana.html">
-<title>Política de Privacidad de Acompaña | TI3NEO</title>
-<style>
-:root{color-scheme:dark;--bg:#050b10;--panel:#101a22;--line:#21434b;--cyan:#2de3df;--white:#f4fafc;--muted:#c1d0d6}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 85% 40% at 90% 0%,#073c4d 0%,transparent 80%),var(--bg);color:var(--white);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7}
-a{color:#66eee8}a:hover{text-decoration:underline}a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
-.wrap{width:min(1050px,calc(100% - 40px));margin:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;background:#fff;color:#000;padding:9px;z-index:5}
-.top{background:rgba(2,10,15,.92);border-bottom:1px solid #1a3640}.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:79px}.brand{font-size:24px;letter-spacing:5px;font-weight:900;text-decoration:none;color:white;white-space:nowrap}.brand em{font-style:normal;color:var(--cyan)}.tagline{font-size:9px;letter-spacing:2px;display:block;color:#a8c1c6;margin-top:-10px}.nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 23px}.nav a{color:#e4f4f6;text-decoration:none;font-size:13px}.nav a:hover{color:var(--cyan)}
-main{padding:62px 0 65px}.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);font-weight:800;margin:0 0 14px}.hero h1{font-size:clamp(29px,4.8vw,52px);letter-spacing:-.04em;line-height:1.13;margin:0 0 16px;max-width:970px}.lead{font-size:17px;color:var(--muted);max-width:850px;margin:0 0 28px}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #2b9092;background:rgba(20,168,170,.1);color:#99f7f1;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700;letter-spacing:.03em}.notice{border:1px solid #41636a;border-left:4px solid var(--cyan);background:#10232b;padding:18px 22px;border-radius:9px;margin:26px 0;color:#d9e6e9}.notice strong{color:white}
-.card{background:linear-gradient(160deg,#0e2029,#0a131a);border:1px solid #1a4850;border-radius:15px;padding:25px 28px;margin:20px 0}.card h2{font-size:22px;line-height:1.3;margin:0 0 10px}.card p:last-child{margin-bottom:0}.card p{color:#d5e1e5}.card ul{color:#d5e1e5;padding-left:21px}.card li{margin:8px 0}.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}.tiles .card{margin:0}.tiles h2{font-size:22px}.action{display:inline-block;margin-top:8px;padding:10px 16px;border:1px solid var(--cyan);border-radius:999px;background:#092a30;color:#d9ffff;font-weight:700;text-decoration:none}.action:hover{background:#0a3c41;text-decoration:none}.sub{color:#a5bac2;font-size:14px}.callout{border:1px solid #1f6670;border-radius:14px;background:#091e27;padding:21px 24px;margin:28px 0}.callout h2{font-size:18px;margin:0 0 8px}.callout p{margin:0 0 12px}.callout p:last-child{margin:0}.small-links{display:flex;flex-wrap:wrap;gap:12px 19px;margin:22px 0}.small-links a{font-size:13px}.footer{border-top:1px solid var(--line);background:#060f14;padding:23px 0;color:#b3c8ce;font-size:13px}.footrow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}.footrow a{color:#d3eeec}.footlinks{display:flex;flex-wrap:wrap;gap:15px}.muted{color:var(--muted)}
-@media(max-width:720px){.top .wrap{align-items:flex-start;flex-direction:column;padding:13px 0}.nav{gap:8px 15px}.nav a{font-size:12px}main{padding:35px 0}.tiles{grid-template-columns:1fr}.card{padding:20px}.wrap{width:min(100% - 28px,1000px)}}
-
-.policy-meta{margin:22px 0;padding:18px 22px;background:#081923;border:1px solid #1f5760;border-radius:12px}.policy-meta p{margin:4px 0}.policy-meta strong{color:#effffd}.notice{border-left-color:#ffd36c}.draftflag{background:#33260a;color:#ffe0a2;border:1px solid #806124}.policy-article .card{scroll-margin-top:30px}.policy-article .card li{line-height:1.65}.policy-article .card a{overflow-wrap:anywhere}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de Acompaña, aplicación infantil y familiar de TI3NEO. Información sobre datos, comunicación local, suscripciones y derechos de las familias.">
+  <meta name="theme-color" content="#061e28">
+  <title>Política de Privacidad de Acompaña | TI3NEO</title>
+  <style>
+    :root { color-scheme: dark; --bg:#04151d; --panel:#081f2a; --panel2:#0a2632; --edge:#1b5464; --text:#eef7fa; --muted:#b8ced5; --cyan:#62d5e8; --accent:#f6bc4d; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.76; color:var(--text); background: radial-gradient(ellipse 75% 36% at 80% 2%,#073943 0%,transparent 90%), linear-gradient(135deg,#020b12 0%,#052532 52%,#04141d 100%); }
+    a { color:var(--cyan); text-decoration-thickness:1px; text-underline-offset:3px; }
+    a:hover { color:#a5f1fa; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:2px; }
+    .wrap { max-width:960px; margin:auto; padding:36px 22px 70px; }
+    .brandline { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:20px; border-bottom:1px solid var(--edge); }
+    .brand { font-size:1.18rem; font-weight:850; letter-spacing:.09em; color:#fff; text-decoration:none; }
+    .brand span { color:var(--cyan); }
+    .home { font-size:.91rem; }
+    header { padding:25px 0 10px; }
+    .eyebrow { color:var(--cyan); font-size:.82rem; font-weight:750; letter-spacing:.10em; text-transform:uppercase; margin:0 0 6px; }
+    h1 { margin:4px 0 8px; font-size:clamp(2.1rem,5vw,3.25rem); letter-spacing:-.045em; line-height:1.12; }
+    h2 { font-size:1.24rem; letter-spacing:-.02em; margin:0 0 12px; line-height:1.35; }
+    p { margin:0 0 13px; }
+    .date { color:var(--muted); margin:0 0 16px; }
+    .intro { color:var(--muted); font-size:1rem; }
+    .panel { background:linear-gradient(145deg,rgba(8,31,42,.96),rgba(5,26,36,.95)); border:1px solid var(--edge); border-radius:15px; padding:21px 23px; margin:17px 0; box-shadow:0 8px 25px rgba(0,0,0,.09); }
+    .details { padding:20px 23px; background:rgba(3,18,26,.55); }
+    .details p { margin:0 0 5px; }
+    .details p:last-child { margin:0; }
+    .contents { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:24px; row-gap:6px; padding:0; margin:8px 0 0; list-style:none; }
+    .contents a { font-size:.89rem; }
+    section { scroll-margin-top:14px; }
+    ul { margin:8px 0 13px; padding-left:1.45em; }
+    li { margin:5px 0; }
+    strong { color:#fff; }
+    footer { padding-top:28px; border-top:1px solid var(--edge); margin-top:30px; font-size:.92rem; }
+    .footerlinks { display:flex; flex-wrap:wrap; gap:9px 22px; margin-top:10px; }
+    .footnote { color:var(--muted); font-size:.89rem; }
+    @media (max-width:650px) { .wrap { padding:22px 16px 45px; } .panel { padding:18px; border-radius:12px; } .contents { grid-template-columns:1fr; } .brandline { align-items:flex-start; } }
+    @media print { :root { color-scheme:light; } body { background:#fff; color:#111; } .panel,.details { background:#fff; color:#111; border-color:#aaa; break-inside:avoid; box-shadow:none; } h1,h2,strong { color:#111; } a { color:#075c75; } .brand { color:#111; } }
+  </style>
 </head>
 <body>
-<a class="skip" href="#contenido">Saltar al contenido</a>
-<header class="top"><div class="wrap"><a class="brand" href="index.html" aria-label="TI3NEO, inicio">TI<em>3</em>NEO<span class="tagline">TECNOLOGÍA QUE AYUDA</span></a><nav class="nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="eliminacion-datos.html">Eliminar datos</a><a href="soporte.html">Soporte</a></nav></div></header>
-<main id="contenido"><div class="wrap">
-<div class="hero">
-<p class="eyebrow">Privacidad infantil y familiar</p>
-<h1>Política de Privacidad de Acompaña</h1>
-<p class="lead">Última actualización: <strong>15 de octubre de 2026</strong></p>
-<span class="pill draftflag">BORRADOR · Pendiente de auditoría de la aplicación final</span>
-</div>
-<div class="notice"><strong>Validación pendiente:</strong> se ha incorporado íntegramente la política facilitada por TI3NEO. Este documento seguirá identificado como <strong>BORRADOR</strong> hasta comprobar que el APK/AAB final y sus permisos, bibliotecas, servicios, almacenamiento, mecanismos de seguridad y eliminación de datos coinciden con todas las prácticas declaradas. No debe presentarse todavía como política definitiva en Google Play.</div>
-<div class="policy-meta">
-<p><strong>Desarrollador:</strong> TI3NEO</p>
-<p><strong>Correo de contacto:</strong> <a href="mailto:ti3neo@gmail.com">ti3neo@gmail.com</a></p>
-<p><strong>País:</strong> Perú</p>
-</div>
-<article class="policy-article" aria-label="Texto de la Política de Privacidad de Acompaña">
-<section class="card"><h2>1. Sobre Acompaña</h2><p>Acompaña es una aplicación infantil y familiar diseñada para facilitar la comunicación entre niños y sus padres, madres, tutores o cuidadores, además de ofrecer actividades de aprendizaje, cuentos, juegos, expresión de necesidades y emociones, herramientas de calma y funciones de acompañamiento familiar.</p><p>Acompaña está diseñada bajo un principio de <strong>privacidad y minimización de datos</strong>.</p><p>La aplicación no está concebida como red social ni permite comunicación pública o anónima con desconocidos.</p></section>
-<section class="card"><h2>2. Configuración por un adulto</h2><p>La configuración inicial de Acompaña debe ser realizada por una madre, padre, tutor o adulto responsable.</p><p>Las funciones administrativas, familiares y de compra se encuentran dentro de una zona destinada a adultos y protegida mediante un PIN.</p></section>
-<section class="card"><h2>3. Información almacenada localmente</h2><p>Acompaña puede almacenar en el dispositivo información necesaria para su funcionamiento, incluyendo:</p><ul><li>configuración de la aplicación;</li><li>perfil o nombre utilizado dentro de la familia;</li><li>mensajes familiares;</li><li>necesidades y emociones seleccionadas dentro de la aplicación;</li><li>progreso de actividades y aprendizaje;</li><li>preferencias;</li><li>historial de actividades;</li><li>estado de juegos y mascota virtual;</li><li>vínculos entre dispositivos familiares.</li></ul><p>Esta información se utiliza únicamente para proporcionar las funciones de Acompaña.</p></section>
-<section class="card"><h2>4. Comunicación entre dispositivos familiares</h2><p>Acompaña permite la comunicación entre dispositivos previamente vinculados pertenecientes a una misma familia.</p><p>La versión de Google Play utiliza únicamente <strong>red Wi-Fi/local</strong> para esta comunicación.</p><p>Acompaña no utiliza Bluetooth en la edición destinada a Google Play.</p><p>Los mensajes están destinados únicamente a los miembros de la familia cuyos dispositivos hayan sido vinculados previamente.</p><p>Acompaña no ofrece:</p><ul><li>chats públicos;</li><li>salas de chat;</li><li>búsqueda de usuarios desconocidos;</li><li>mensajería anónima;</li><li>perfiles públicos.</li></ul></section>
-<section class="card"><h2>5. Protección de los niños</h2><p>Acompaña está diseñada para ser utilizada por niños bajo la configuración y supervisión de un adulto responsable.</p><p>No utilizamos los datos infantiles con fines publicitarios.</p><p>No vendemos ni alquilamos información personal de niños o familias.</p><p>Acompaña no utiliza datos de los niños para crear perfiles publicitarios ni para mostrar publicidad personalizada.</p><p>Google Play exige medidas especiales de privacidad para aplicaciones cuyo público incluye niños, y Acompaña está diseñada para evitar identificadores publicitarios y otros identificadores persistentes innecesarios. <a href="https://support.google.com/googleplay/android-developer/answer/9893335?hl=es-us" rel="noopener noreferrer" target="_blank">Ayuda de Google</a>.</p></section>
-<section class="card"><h2>6. Publicidad</h2><p>Acompaña no contiene publicidad de terceros.</p><p>No utilizamos redes publicitarias.</p><p>No mostramos publicidad personalizada ni publicidad basada en el comportamiento del niño.</p></section>
-<section class="card"><h2>7. Identificadores y datos que no utilizamos</h2><p>Acompaña no necesita para sus funciones infantiles recopilar ni utilizar:</p><ul><li>Advertising ID o AAID;</li><li>IMEI;</li><li>IMSI;</li><li>número de serie de la SIM;</li><li>dirección MAC como identificador del niño;</li><li>BSSID o SSID para perfilar usuarios;</li><li>número telefónico del dispositivo;</li><li>ubicación precisa;</li><li>contactos;</li><li>historial de llamadas;</li><li>SMS;</li><li>cámara;</li><li>micrófono.</li></ul><p>La aplicación podrá utilizar identificadores técnicos generados internamente para reconocer dispositivos familiares vinculados y administrar funciones de seguridad y suscripción.</p></section>
-<section class="card"><h2>8. Acompaña FREE y Acompaña Premium</h2><p>Acompaña puede ofrecer una modalidad gratuita y una modalidad Premium.</p><p>La modalidad FREE permite utilizar una selección de funciones básicas y hasta <strong>1 dispositivo familiar</strong>.</p><p>La modalidad Premium desbloquea el contenido completo de Acompaña y puede permitir hasta <strong>3 dispositivos familiares</strong>.</p><p>Los pagos y suscripciones realizados en Android se procesan mediante Google Play.</p><p>Acompaña no almacena directamente la información completa de tarjetas bancarias utilizadas para realizar compras en Google Play.</p></section>
-<section class="card"><h2>9. Información utilizada para Premium</h2><p>Para administrar una suscripción Premium, Acompaña podrá procesar información técnica mínima necesaria para:</p><ul><li>comprobar que la suscripción se encuentra activa;</li><li>reconocer una familia Premium;</li><li>controlar el número de dispositivos autorizados;</li><li>vincular o liberar dispositivos;</li><li>restaurar beneficios Premium.</li></ul><p>Esta información no se utiliza para publicidad.</p><p>Los mensajes, emociones, progreso, cuentos, juegos y contenido familiar no están destinados a ser almacenados en el sistema utilizado para validar suscripciones.</p></section>
-<section class="card"><h2>10. Servicios de Google</h2><p>Acompaña puede utilizar servicios propios de Google necesarios para la distribución y comercialización de la aplicación, especialmente:</p><ul><li>Google Play;</li><li>Google Play Billing.</li></ul><p>Google puede procesar determinada información relacionada con la compra, cuenta y dispositivo de acuerdo con sus propias políticas y condiciones.</p><p>Acompaña procura no incorporar SDK de publicidad, rastreo o analítica que no sean necesarios para su funcionamiento.</p></section>
-<section class="card"><h2>11. Permisos del dispositivo</h2><p>Acompaña solicita únicamente los permisos necesarios para las funciones ofrecidas.</p><p>La edición Google Play utiliza la red local para permitir la comunicación entre dispositivos familiares.</p><p>No solicita permisos Bluetooth en esta edición.</p><p>No solicita permiso de ubicación precisa.</p><p>Cuando un permiso sea necesario, la aplicación procurará explicar su finalidad antes o durante la solicitud correspondiente.</p></section>
-<section class="card"><h2>12. Seguridad</h2><p>Acompaña utiliza medidas técnicas orientadas a proteger la información almacenada localmente y la comunicación entre dispositivos familiares.</p><p>Entre estas medidas pueden encontrarse:</p><ul><li>almacenamiento local protegido;</li><li>Android Keystore;</li><li>cifrado de información sensible;</li><li>autenticación de mensajes;</li><li>códigos temporales de vinculación;</li><li>PIN de adulto.</li></ul><p>Aunque ningún sistema puede garantizar una seguridad absoluta, Acompaña aplica medidas razonables para reducir accesos no autorizados y limitar la exposición de datos.</p></section>
-<section class="card"><h2>13. Conservación de la información</h2><p>La mayor parte de la información de Acompaña se conserva localmente en el dispositivo mientras la aplicación permanezca instalada o hasta que el usuario adulto la elimine mediante las funciones disponibles.</p><p>Los datos técnicos relacionados con Premium podrán conservarse durante el tiempo necesario para administrar la suscripción, dispositivos autorizados, seguridad y obligaciones legales o transaccionales aplicables.</p></section>
-<section class="card"><h2>14. Eliminación de datos</h2><p>El adulto responsable puede eliminar información local de Acompaña mediante las opciones disponibles dentro de la aplicación.</p><p>La desinstalación de la aplicación elimina normalmente los datos locales de Acompaña que Android no conserve por mecanismos propios del sistema.</p><p>Cuando exista información asociada a Premium almacenada fuera del dispositivo, el usuario podrá solicitar su eliminación contactando a:</p><p><a href="mailto:ti3neo@gmail.com"><strong>ti3neo@gmail.com</strong></a></p><p>TI3NEO atenderá las solicitudes de eliminación de datos que correspondan, salvo aquella información que deba conservarse temporalmente por razones legales, de seguridad o relacionadas con una transacción válida.</p></section>
-<section class="card"><h2>15. Cuentas</h2><p>Acompaña no requiere crear una cuenta infantil con correo electrónico y contraseña para utilizar las funciones básicas de la aplicación.</p><p>La suscripción Premium se vincula al entorno de Google Play y a los identificadores técnicos necesarios para administrar los dispositivos familiares autorizados.</p><p>Si en el futuro Acompaña incorpora cuentas propias, esta Política de Privacidad será actualizada antes de poner esa función a disposición de los usuarios.</p></section>
-<section class="card"><h2>16. Datos sensibles y salud</h2><p>Acompaña no realiza diagnósticos médicos ni sustituye la atención profesional.</p><p>Las funciones de emociones, necesidades, calma y progreso se presentan como herramientas familiares, educativas y de acompañamiento.</p><p>Acompaña no utiliza estas funciones para elaborar diagnósticos médicos, psicológicos o clínicos.</p></section>
-<section class="card"><h2>17. Transferencias y venta de datos</h2><p>TI3NEO no vende datos personales de niños ni familias.</p><p>TI3NEO no utiliza información infantil con fines de marketing conductual.</p><p>La información solo podrá compartirse cuando sea necesaria para prestar servicios técnicos vinculados al funcionamiento legítimo de la aplicación o cuando exista una obligación legal aplicable.</p></section>
-<section class="card"><h2>18. Cambios en esta Política</h2><p>Esta Política de Privacidad podrá actualizarse si Acompaña incorpora nuevas funciones, cambia sus prácticas de tratamiento de datos o debe adaptarse a cambios legales o de Google Play.</p><p>La fecha de la versión vigente aparecerá siempre al inicio de esta página.</p></section>
-<section class="card"><h2>19. Contacto</h2><p>Para consultas relacionadas con privacidad, funcionamiento o eliminación de información:</p><p><strong>Desarrollador:</strong> TI3NEO<br><strong>Correo electrónico:</strong> <a href="mailto:ti3neo@gmail.com">ti3neo@gmail.com</a><br><strong>País:</strong> Perú</p></section>
-</article>
-<nav class="small-links" aria-label="Otras páginas"><a href="privacidad.html">Centro de privacidad</a><a href="privacidad-blockrat.html">Privacidad BLOCKRAT</a><a href="eliminacion-datos.html">Eliminación de datos</a><a href="soporte.html">Soporte</a></nav>
-</div></main>
-<footer class="footer"><div class="wrap footrow"><span>© 2026 TI3NEO · Tecnología que ayuda</span><div class="footlinks"><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="soporte.html">Soporte</a></div></div></footer>
-</body></html>
+ <main class="wrap">
+  <nav class="brandline" aria-label="Navegación principal">
+   <a class="brand" href="https://ti3neo.github.io/">TI<span>3</span>NEO</a>
+   <a class="home" href="https://ti3neo.github.io/">Volver al sitio TI3NEO</a>
+  </nav>
+  <header>
+   <p class="eyebrow">Privacidad infantil y familiar</p>
+   <h1>Política de Privacidad de Acompaña</h1>
+   <p class="date">Última actualización: <strong>29 de octubre de 2026</strong></p>
+   <p class="intro">Esta política explica cómo funciona Acompaña, qué información puede procesar para sus funciones familiares, cómo protegemos los datos y cómo solicitar su eliminación.</p>
+  </header>
+  <div class="panel details">
+   <p><strong>Desarrollador:</strong> TI3NEO</p>
+   <p><strong>Contacto de privacidad:</strong> <a href="mailto:ti3neo@gmail.com">ti3neo@gmail.com</a></p>
+   <p><strong>País:</strong> Perú</p>
+  </div>
+  <nav class="panel" aria-label="Contenido de la política">
+   <h2>Contenido</h2>
+   <ol class="contents">
+    <li><a href="#sobre">Sobre Acompaña</a></li><li><a href="#adulto">Configuración por un adulto</a></li>
+    <li><a href="#local">Información almacenada localmente</a></li><li><a href="#comunicacion">Comunicación familiar</a></li>
+    <li><a href="#ninos">Protección de los niños</a></li><li><a href="#publicidad">Publicidad</a></li>
+    <li><a href="#identificadores">Identificadores y permisos no utilizados</a></li><li><a href="#planes">Planes FREE y Premium</a></li>
+    <li><a href="#backend">Información de Premium</a></li><li><a href="#servicios">Servicios externos</a></li>
+    <li><a href="#permisos">Permisos del dispositivo</a></li><li><a href="#seguridad">Seguridad</a></li>
+    <li><a href="#conservacion">Conservación de información</a></li><li><a href="#eliminacion">Eliminación de datos</a></li>
+    <li><a href="#cuentas">Cuentas</a></li><li><a href="#salud">Emociones, necesidades y salud</a></li>
+    <li><a href="#transferencia">Transferencia y venta de datos</a></li><li><a href="#cambios">Cambios de esta política</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+   </ol>
+  </nav>
+  <section class="panel" id="sobre"><h2>1. Sobre Acompaña</h2>
+   <p>Acompaña es una aplicación infantil y familiar diseñada para facilitar la comunicación entre niños y sus padres, madres, tutores o cuidadores. Ofrece actividades de aprendizaje, cuentos, juegos, expresión de necesidades y emociones y funciones de acompañamiento familiar.</p>
+   <p>Aplicamos principios de <strong>privacidad y minimización de datos</strong>. La aplicación no está concebida como una red social y no permite comunicación pública o anónima con desconocidos.</p>
+  </section>
+  <section class="panel" id="adulto"><h2>2. Configuración por un adulto</h2>
+   <p>La configuración inicial debe realizarla una madre, un padre, un tutor o un adulto responsable. Las funciones administrativas, familiares y de compra se encuentran en una zona destinada a adultos, protegida mediante un PIN.</p>
+  </section>
+  <section class="panel" id="local"><h2>3. Información almacenada localmente</h2>
+   <p>Acompaña puede almacenar en el dispositivo los datos necesarios para funcionar:</p>
+   <ul><li>Configuración, preferencias y nombres o perfiles utilizados dentro de la familia.</li><li>Mensajes y comunicaciones familiares.</li><li>Necesidades y emociones seleccionadas.</li><li>Progreso de aprendizaje, actividades, juegos y mascota virtual.</li><li>Historiales de actividad y vínculos entre dispositivos familiares.</li></ul>
+   <p>Esta información se utiliza para ofrecer las funciones familiares de la aplicación. Los mensajes y contenidos familiares no están destinados a almacenarse en la base de datos de validación de Premium.</p>
+  </section>
+  <section class="panel" id="comunicacion"><h2>4. Comunicación entre dispositivos familiares</h2>
+   <p>La edición de Acompaña distribuida en Google Play permite la comunicación entre dispositivos previamente vinculados de una misma familia mediante <strong>Wi-Fi y red local</strong>. No utiliza Bluetooth en esta edición.</p>
+   <p>La comunicación está destinada a dispositivos familiares autorizados; no hay chats públicos, búsqueda de desconocidos, perfiles públicos ni mensajería anónima.</p>
+  </section>
+  <section class="panel" id="ninos"><h2>5. Protección de los niños</h2>
+   <p>Acompaña está destinada al uso infantil bajo configuración y supervisión de un adulto responsable. No utilizamos datos infantiles para crear perfiles publicitarios ni para mostrar publicidad personalizada. No vendemos ni alquilamos información personal de niños o familias.</p>
+   <p>Las aplicaciones dirigidas a menores están sujetas a requisitos específicos de privacidad en Google Play. Consulte las <a href="https://support.google.com/googleplay/android-developer/answer/9893335?hl=es" rel="noopener noreferrer">políticas de Familias de Google Play</a>.</p>
+  </section>
+  <section class="panel" id="publicidad"><h2>6. Publicidad</h2>
+   <p>Acompaña no contiene publicidad de terceros, no utiliza redes publicitarias y no muestra publicidad personalizada ni anuncios basados en el comportamiento de los niños.</p>
+  </section>
+  <section class="panel" id="identificadores"><h2>7. Identificadores y datos que no utilizamos</h2>
+   <p>La edición de Google Play no requiere recopilar, para las funciones infantiles, identificadores publicitarios como AAID, IMEI, IMSI, serial de SIM, dirección MAC para perfilar usuarios, ubicación precisa, contactos, historial de llamadas o SMS. Tampoco solicita acceso a cámara o micrófono para sus funciones descritas en esta edición.</p>
+   <p>Para los vínculos familiares, la seguridad y la suscripción se utilizan <strong>identificadores técnicos internos</strong> de familia y dispositivo, separados de los identificadores publicitarios.</p>
+  </section>
+  <section class="panel" id="planes"><h2>8. Acompaña FREE y Premium Familiar</h2>
+   <p><strong>FREE:</strong> ofrece funciones básicas, hasta 1 dispositivo familiar, 5 juegos y 5 cuentos.</p>
+   <p><strong>Premium Familiar:</strong> permite hasta 3 dispositivos familiares y acceso al contenido completo.</p>
+   <p>Al comenzar a utilizar Acompaña se ofrece un <strong>periodo de bienvenida de 30 días</strong> con acceso a las funciones Premium. Este periodo no supone por sí mismo un cobro ni una renovación automática. Al terminar, si no existe una suscripción Premium activa, la aplicación pasa al modo FREE conservando los datos familiares según las opciones de la aplicación.</p>
+   <p>Las suscripciones de pago se gestionan mediante <strong>Google Play Billing</strong>. Acompaña no almacena directamente los datos completos de las tarjetas utilizadas para pagar en Google Play.</p>
+  </section>
+  <section class="panel" id="backend"><h2>9. Información técnica utilizada para Premium</h2>
+   <p>Para gestionar el periodo de bienvenida, comprobar suscripciones y administrar los dispositivos autorizados, Acompaña utiliza un servicio técnico de <strong>Cloudflare Workers y una base de datos Cloudflare D1</strong>.</p>
+   <p>Este servicio puede procesar identificadores técnicos de familia y dispositivo, estado y fechas de la prueba de bienvenida, estado de la suscripción, información técnica de validación de compras de Google Play y registros necesarios para gestionar autorizaciones y seguridad.</p>
+   <p>Estos datos se utilizan para verificar beneficios, limitar o liberar dispositivos y restaurar el acceso Premium. No se utilizan para publicidad. El servicio de validación de Premium no está diseñado para guardar mensajes, emociones, actividades, cuentos o progreso del niño.</p>
+  </section>
+  <section class="panel" id="servicios"><h2>10. Servicios externos</h2>
+   <p>La aplicación utiliza servicios de terceros necesarios para su distribución y operación:</p>
+   <ul><li><strong>Google Play:</strong> distribución, instalación y actualización de la aplicación.</li><li><strong>Google Play Billing:</strong> gestión y verificación de compras y suscripciones.</li><li><strong>Cloudflare Workers y D1:</strong> administración técnica del periodo de bienvenida, acceso Premium y vínculos de dispositivos familiares.</li></ul>
+   <p>Estos proveedores pueden procesar información técnica necesaria para prestar sus servicios, conforme a sus políticas y condiciones aplicables. Acompaña no incorpora redes de anuncios de terceros.</p>
+  </section>
+  <section class="panel" id="permisos"><h2>11. Permisos del dispositivo</h2>
+   <p>La edición de Google Play utiliza permisos de conexión a Internet, estado y comunicación por Wi-Fi/red local, notificaciones cuando corresponda y servicios en primer plano para mantener funciones de comunicación familiar entre dispositivos vinculados.</p>
+   <p>Esta edición no solicita permisos Bluetooth ni ubicación precisa. Los permisos se utilizan para funciones declaradas de la aplicación y no para fines publicitarios.</p>
+  </section>
+  <section class="panel" id="seguridad"><h2>12. Seguridad</h2>
+   <p>TI3NEO aplica medidas técnicas para reducir accesos no autorizados a la información familiar y a los datos técnicos de suscripción. Estas medidas incluyen controles de acceso a las funciones adultas, procedimientos de vinculación entre dispositivos y mecanismos de protección de las comunicaciones.</p>
+   <p>Como sucede con cualquier sistema, ninguna medida de seguridad ofrece protección absoluta. Recomendamos mantener actualizado Android, proteger el acceso al dispositivo y no compartir el PIN adulto.</p>
+  </section>
+  <section class="panel" id="conservacion"><h2>13. Conservación de la información</h2>
+   <p>La información familiar almacenada localmente se conserva mientras permanezca en el dispositivo, hasta que sea eliminada mediante las funciones de la aplicación o mediante los controles de almacenamiento de Android.</p>
+   <p>Los registros técnicos necesarios para la bienvenida, los vínculos familiares y las suscripciones se conservan mientras sean necesarios para gestionar esos servicios, resolver incidencias, verificar transacciones y atender obligaciones legales o de seguridad aplicables. Cuando ya no sean necesarios, corresponde su eliminación o depuración conforme a esos fines y a las solicitudes procedentes.</p>
+  </section>
+  <section class="panel" id="eliminacion"><h2>14. Eliminación de datos</h2>
+   <p>El adulto responsable puede eliminar información local mediante las opciones de la aplicación o los controles de almacenamiento del dispositivo. Desinstalar Acompaña elimina normalmente los datos locales, salvo aquellos que Android pueda conservar en copias de seguridad o servicios externos.</p>
+   <p>Para solicitar la eliminación de datos técnicos de familia, dispositivos o suscripción almacenados fuera del celular, escribe a <a href="mailto:ti3neo@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20datos%20-%20Acompa%C3%B1a">ti3neo@gmail.com</a>. Podemos requerir información razonable para comprobar que la solicitud procede del adulto responsable y localizar el registro correspondiente.</p>
+   <p>Se atenderán las solicitudes aplicables, salvo los datos que deban conservarse durante un plazo justificado por obligaciones legales, seguridad o transacciones válidas. Consulta también la <a href="https://ti3neo.github.io/eliminacion-datos.html">página de eliminación de datos</a>.</p>
+  </section>
+  <section class="panel" id="cuentas"><h2>15. Cuentas</h2>
+   <p>Acompaña no requiere que el niño cree una cuenta propia con correo y contraseña para utilizar sus funciones. Los planes familiares utilizan identificadores técnicos y, cuando corresponde, las funciones de compra y suscripción de Google Play.</p>
+   <p>Si en el futuro se incorpora un sistema propio de cuentas, esta política se actualizará antes de habilitarlo para las familias.</p>
+  </section>
+  <section class="panel" id="salud"><h2>16. Emociones, necesidades y salud</h2>
+   <p>Las funciones que permiten expresar emociones, necesidades y molestias están destinadas a facilitar la comunicación y el acompañamiento familiar. Acompaña no realiza diagnósticos médicos ni psicológicos, no ofrece tratamientos y no sustituye la atención profesional.</p>
+  </section>
+  <section class="panel" id="transferencia"><h2>17. Transferencia y venta de datos</h2>
+   <p>TI3NEO no vende datos personales de niños o familias ni utiliza información infantil para marketing conductual.</p>
+   <p>La información técnica necesaria para las funciones de compra, suscripción y seguridad puede ser procesada por los proveedores descritos en la sección 10. También podremos atender requerimientos legales aplicables. La intervención de proveedores puede implicar procesamiento de datos fuera de Perú, según la infraestructura y condiciones de esos servicios.</p>
+  </section>
+  <section class="panel" id="cambios"><h2>18. Cambios en esta política</h2>
+   <p>Actualizaremos esta política si cambian las funciones de Acompaña, las categorías de datos tratados, los proveedores utilizados o los requisitos legales aplicables. La fecha de la última actualización siempre estará visible al inicio.</p>
+  </section>
+  <section class="panel" id="contacto"><h2>19. Contacto</h2>
+   <p>Para consultas sobre privacidad, funcionamiento y eliminación de información:</p>
+   <p><strong>Desarrollador:</strong> TI3NEO<br><strong>Correo:</strong> <a href="mailto:ti3neo@gmail.com">ti3neo@gmail.com</a><br><strong>País:</strong> Perú</p>
+  </section>
+  <footer>
+   <strong>TI3NEO · Acompaña</strong>
+   <p class="footnote">Información de privacidad para las familias que utilizan Acompaña.</p>
+   <div class="footerlinks">
+    <a href="https://ti3neo.github.io/privacidad.html">Centro de privacidad</a>
+    <a href="https://ti3neo.github.io/privacidad-blockrat.html">Privacidad BLOCKRAT</a>
+    <a href="https://ti3neo.github.io/eliminacion-datos.html">Eliminación de datos</a>
+    <a href="https://ti3neo.github.io/soporte.html">Soporte</a>
+   </div>
+  </footer>
+ </main>
+</body>
+</html>
